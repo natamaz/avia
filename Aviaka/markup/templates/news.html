@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Новости</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="overlay-order orderPopup animated ">
+        <div class="close"></div>
+        <div class="order__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Авторизация</h3>
+                <form>
+                    <div class="input_box">
+                        <label>E-mail</label>
+                        <input placeholder="Введите вашу почту">
+                    </div>
+                    <div class="input_box">
+                        <label>Пароль</label>
+                        <input placeholder="Введите пароль">
+                    </div>
+                    <button class="btn_form">Вход</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-registration registrationPopup animated ">
+        <div class="close"></div>
+        <div class="registration__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Регистрация</h3>
+                <form>
+                    <div class="input_box">
+                        <label>Имя Фамилия</label>
+                        <input placeholder="Например, Иван Иванов">
+                    </div>
+                    <div class="input_box">
+                        <label>E-mail</label>
+                        <input placeholder="Введите вашу почту">
+                    </div>
+                    <div class="input_box">
+                        <label>Номер телефона</label>
+                        <input class="code" placeholder="370" type="number">
+                        <input class="phone" placeholder="ХХХ-ХХХ-ХХ-ХХ" type="number">
+                    </div>
+                    <div class="input_box">
+                        <label>Пароль</label>
+                        <input placeholder="Введите пароль">
+                    </div>
+                    <div class="input_box">
+                        <label>Повторите пароль</label>
+                        <input placeholder="Повторите пароль">
+                    </div>
+                    <button class="btn_form">зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-valid validPopup animated ">
+        <div class="close"></div>
+        <div class="valid__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Спасибо Вам за регистрацию!</h3>
+                <button class="btn_form">хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-invalid invalidPopup animated ">
+        <div class="close"></div>
+        <div class="invalid__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Ошибка данных</h3>
+                <button class="btn_form">хорошо</button>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png">
+            </a>
+            <div class="mobile">
+                <div class="user_menu open-order">
+                    <i class="icon-user"></i>
+                </div>
+                <div class="menu">
+                    <i class="icon-burger menu_btn"></i>
+                </div>
+            </div>
+            <div class="desktop">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="stocks.html">Спецпредложение</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Новости и публикации</a>
+                    </li>
+                </ul>
+                <div class="menu_about">
+                    <div class="select_block">
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>RU</option>
+                                <option>ENG</option>
+                                <option>PL</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>$</option>
+                                <option>RUB</option>
+                                <option>EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="user_menu open-order">
+                        <i class="icon-user"></i>
+                    </div>
+                    <!--<div class="switch-btn switch-on"></div>-->
+                </div>
+            </div>
+            <nav class="menu_list">
+                <div class="select_block">
+                    <div class="select">
+                        <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                            <option>RU</option>
+                            <option>ENG</option>
+                            <option>PL</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                            <option>$</option>
+                            <option>RUB</option>
+                            <option>EUR</option>
+
+
+                        </select>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <ul>
+                        <li>
+                            <a href="stocks.html">Спецпредложение</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости и публикации</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="news">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li><span>/</span></li>
+                <li class="active">Новости и публикации</li>
+            </ul>
+            <div class="title">
+                <h2 class="revealator-slideleft revealator-once">новости </h2>
+                <p class="revealator-slideleft revealator-delay4 revealator-once">Самое интересное от Авиаки</p>
+                <span class="revealator-slideright revealator-delay6 revealator-duration12 revealator-once">Our News</span>
+            </div>
+            <div class="tabs">
+                <select id="test" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                    <option value="0">Путешествия</option>
+                    <option value="1">Отели</option>
+                    <option value="2">Авиабилеты</option>
+                    <option value="3">Отели</option>
+                    <option value="4">Авиабилеты</option>
+                </select>
+                <div class="top_line">
+                    <ul class="tabs__caption">
+                        <li class="active">Путешествия</li>
+                        <li>Отели</li>
+                        <li>Авиабилеты</li>
+                        <li>Отели</li>
+                        <li>Авиабилеты</li>
+                    </ul>
+                    <p><i class="icon-close"></i> Сбросить категорию</p>
+                </div>
+                <p class="about">Найдено 100 Новостей</p>
+                <div class="tabs__content active" id="test_hide0">
+                    <div class="news_link">
+                        <div class="news_box news_1">
+                            <div class="img_news" style="background-image: url(../img/news_9.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_8.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_4">
+                            <div class="img_news" style="background-image: url(../img/news_5.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_6.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_1.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_2.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_3.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_slide">Загрузить еще</a>
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                    </ul>
+                </div>
+                <div class="tabs__content" id="test_hide1">
+                    <div class="news_link">
+                        <div class="news_box news_1">
+                            <div class="img_news" style="background-image: url(../img/news_9.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_8.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_4">
+                            <div class="img_news" style="background-image: url(../img/news_5.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_6.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_1.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_2.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_3.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_slide">Загрузить еще</a>
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                    </ul>
+                </div>
+                <div class="tabs__content" id="test_hide2">
+                    <div class="news_link">
+                        <div class="news_box news_1">
+                            <div class="img_news" style="background-image: url(../img/news_9.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_8.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_4">
+                            <div class="img_news" style="background-image: url(../img/news_5.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_6.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_1.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_2.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_3.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_slide">Загрузить еще</a>
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                    </ul>
+                </div>
+                <div class="tabs__content" id="test_hide3">
+                    <div class="news_link">
+                        <div class="news_box news_1">
+                            <div class="img_news" style="background-image: url(../img/news_9.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_8.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_4">
+                            <div class="img_news" style="background-image: url(../img/news_5.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_6.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_1.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_2.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_3.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_slide">Загрузить еще</a>
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                    </ul>
+                </div>
+                <div class="tabs__content" id="test_hide4">
+                    <div class="news_link">
+                        <div class="news_box news_1">
+                            <div class="img_news" style="background-image: url(../img/news_9.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_8.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_4">
+                            <div class="img_news" style="background-image: url(../img/news_5.png)"></div>
+                            <div class="text_news">
+                                <p class="date">29/01/2020</p>
+                                <a href="newsInternal.html">Текущие распродажи авиабилетов, скидки и акции авиакомпаний</a>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_6.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_3">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_7.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_1.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_2.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_3.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_box news_2">
+                            <a href="newsInternal.html">
+                                <div class="top" style="background-image: url(../img/news_4.png)"></div>
+                            </a>
+                            <div class="bottom">
+                                <a href="newsInternal.html">
+                                    <h4>Первый раз в Южную Америку: какая страна</h4>
+                                </a>
+                                <p>
+                                    Далеко-далеко за словесными
+                                    горами в стране гласных
+                                    и согласных живут рыбные
+                                    тексты. Вдали от ...
+                                </p>
+                                <div class="about">
+                                    <a href="newsInternal.html" class="btn_linck">Подробнее</a>
+                                    <p class="date">29/01/2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_slide">Загрузить еще</a>
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><strong>Компания</strong></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><strong>Информация</strong></li>
+                        <li><a href="#">Безопасность</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Оферта</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><strong>Часто задаваемые вопросы</strong></li>
+                        <li><a href="#">Оформление и покупка</a></li>
+                        <li><a href="#">Возврат и обмен билета</a></li>
+                        <li><a href="#">Все вопросы и ответы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/logo.png">
+                </a>
+                <p>
+                    © 2007–2019, AVIAKA -
+                    <span>
+                        дешевые авиабилеты
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/fm.revealator.jquery.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jQueryUITouchPunch.min.js"></script>
+    <script src="../js/jquery.scrollify.min.js"></script>
+    <script src="../js/script.min.js"></script>
+
+</body>
+
+</html>

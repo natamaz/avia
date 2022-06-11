@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Статья</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/newsInternal.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="overlay-order orderPopup animated ">
+        <div class="close"></div>
+        <div class="order__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Авторизация</h3>
+                <form>
+                    <div class="input_box">
+                        <label>E-mail</label>
+                        <input placeholder="Введите вашу почту">
+                    </div>
+                    <div class="input_box">
+                        <label>Пароль</label>
+                        <input placeholder="Введите пароль">
+                    </div>
+                    <button class="btn_form">Вход</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-registration registrationPopup animated ">
+        <div class="close"></div>
+        <div class="registration__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Регистрация</h3>
+                <form>
+                    <div class="input_box">
+                        <label>Имя Фамилия</label>
+                        <input placeholder="Например, Иван Иванов">
+                    </div>
+                    <div class="input_box">
+                        <label>E-mail</label>
+                        <input placeholder="Введите вашу почту">
+                    </div>
+                    <div class="input_box">
+                        <label>Номер телефона</label>
+                        <input class="code" placeholder="370" type="number">
+                        <input class="phone" placeholder="ХХХ-ХХХ-ХХ-ХХ" type="number">
+                    </div>
+                    <div class="input_box">
+                        <label>Пароль</label>
+                        <input placeholder="Введите пароль">
+                    </div>
+                    <div class="input_box">
+                        <label>Повторите пароль</label>
+                        <input placeholder="Повторите пароль">
+                    </div>
+                    <button class="btn_form">зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-valid validPopup animated ">
+        <div class="close"></div>
+        <div class="valid__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Спасибо Вам за регистрацию!</h3>
+                <button class="btn_form">хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-invalid invalidPopup animated ">
+        <div class="close"></div>
+        <div class="invalid__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Ошибка данных</h3>
+                <button class="btn_form">хорошо</button>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png">
+            </a>
+            <div class="mobile">
+                <div class="user_menu open-order">
+                    <i class="icon-user"></i>
+                </div>
+                <div class="menu">
+                    <i class="icon-burger menu_btn"></i>
+                </div>
+            </div>
+            <div class="desktop">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="stocks.html">Спецпредложение</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Новости и публикации</a>
+                    </li>
+                </ul>
+                <div class="menu_about">
+                    <div class="select_block">
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>RU</option>
+                                <option>ENG</option>
+                                <option>PL</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>$</option>
+                                <option>RUB</option>
+                                <option>EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="user_menu open-order">
+                        <i class="icon-user"></i>
+                    </div>
+                    <!--<div class="switch-btn switch-on"></div>-->
+                </div>
+            </div>
+            <nav class="menu_list">
+                <div class="select_block">
+                    <div class="select">
+                        <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                            <option>RU</option>
+                            <option>ENG</option>
+                            <option>PL</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                            <option>$</option>
+                            <option>RUB</option>
+                            <option>EUR</option>
+
+
+                        </select>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <ul>
+                        <li>
+                            <a href="stocks.html">Спецпредложение</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости и публикации</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="news">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li><span>/</span></li>
+                <li><a href="news.html">Новости и публикации</a></li>
+                <li><span>/</span></li>
+                <li class="active">Заголовок новости</li>
+            </ul>
+            <div class="about"><img src="../img/travel.png">
+                <p>Путешествия</p>
+            </div>
+            <h3>Здесь будет заголовок новости </h3>
+        </div>
+        <div class="img" style="background-image: url(../img/foto.png)"></div>
+        <div class="container">
+
+            <div class="text">
+                <div class="col col_1">
+                    <p class="strong">
+                        Далеко-далеко за словесными
+                        горами в стране гласных
+                        и согласных живут рыбные
+                        тексты. Вдали от всех живут они
+                        в буквенных домах на берегу
+                        Семантика большого языкового
+                        океана. Маленький ручеек Даль
+                        журчит по всей стране
+                        и обеспечивает ее всеми
+                        необходимыми правилами.
+                    </p>
+                    <div class="block">
+                        <p>
+                            Далеко-далеко за словесными горами в стране гласных и согласных
+                            живут рыбные тексты. Вдали от всех живут они в буквенных домах
+                            на берегу Семантика большого языкового океана. Маленький
+                            ручеек Даль журчит по всей стране и обеспечивает ее всеми
+                            необходимыми правилами. Даже всемогущая пунктуация не имеет
+                            власти над рыбными текстами, ведущими безорфографичный.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <p>
+                            Он собрал семь своих заглавных букв, подпоясал инициал за пояс
+                            и пустился в дорогу. Взобравшись на первую вершину курсивных
+                            гор, бросил он последний взгляд назад, на силуэт своего родного
+                            города Буквоград, на заголовок деревни Алфавит и на подзаголовок
+                            своего переулка Строчка.
+                        </p>
+                        <p>
+                            Грустный реторический вопрос скатился по его щеке и он продолжил
+                            свой путь. По дороге встретил текст рукопись. Она предупредила
+                            его: «В моей стране все переписывается по несколько раз.
+                            Единственное, что от меня осталось, это приставка «и». Возвращайся
+                            ты лучше в свою безопасную страну».
+                        </p>
+                    </div>
+                    <p class="quote">
+                        Великий Оксмокс предупреждал ее
+                        о злых запятых, диких знаках
+                        вопроса и коварных точках
+                        с запятой, но текст не дал сбить
+                        себя с толку.
+                    </p>
+                </div>
+                <div class="col col_2">
+                    <img src="../img/foto.png">
+                    <div class="block">
+                        <p>
+                            Он собрал семь своих заглавных букв, подпоясал инициал за пояс
+                            и пустился в дорогу. Взобравшись на первую вершину курсивных
+                            гор, бросил он последний взгляд назад, на силуэт своего родного
+                            города Буквоград, на заголовок деревни Алфавит и на подзаголовок
+                            своего переулка Строчка.
+                        </p>
+                        <p>
+                            Грустный реторический вопрос скатился по его щеке и он продолжил
+                            свой путь. По дороге встретил текст рукопись. Она предупредила
+                            его: «В моей стране все переписывается по несколько раз.
+                            Единственное, что от меня осталось, это приставка «и». Возвращайся
+                            ты лучше в свою безопасную страну».
+                        </p>
+                    </div>
+                    <div class="block">
+                        <p>
+                            Он собрал семь своих заглавных букв, подпоясал инициал за пояс
+                            и пустился в дорогу. Взобравшись на первую вершину курсивных
+                            гор, бросил он последний взгляд назад, на силуэт своего родного
+                            города Буквоград, на заголовок деревни Алфавит и на подзаголовок
+                            своего переулка Строчка.
+                        </p>
+                        <p>
+                            Грустный реторический вопрос скатился по его щеке и он продолжил
+                            свой путь. По дороге встретил текст рукопись. Она предупредила
+                            его: «В моей стране все переписывается по несколько раз.
+                            Единственное, что от меня осталось, это приставка «и». Возвращайся
+                            ты лучше в свою безопасную страну».
+                        </p>
+                    </div>
+                </div>
+                <p class="date">29/01/2020</p>
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <div class="container">
+            <h3>Последние новости</h3>
+            <div class="slider_news">
+                <div>
+                    <div class="slide">
+                        <a href="newsInternal.html" class="top" style="background-image: url(../img/news_1.png)"></a>
+                        <div class="bottom">
+                            <h4>
+                                <a href="newsInternal.html"> Первый раз в Южную Америку: какая страна</a>
+                            </h4>
+                            <p>
+                                Далеко-далеко за словесными
+                                горами в стране гласных
+                                и согласных живут рыбные
+                                тексты. Вдали от ...
+                            </p>
+                            <div class="about">
+                                <a class="btn_linck" href="newsInternal.html">Подробнее</a>
+                                <p class="date">29/01/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide">
+                        <a href="newsInternal.html" class="top" style="background-image: url(../img/news_1.png)"></a>
+                        <div class="bottom">
+                            <h4>
+                                <a href="newsInternal.html"> Первый раз в Южную Америку: какая страна</a>
+                            </h4>
+                            <p>
+                                Далеко-далеко за словесными
+                                горами в стране гласных
+                                и согласных живут рыбные
+                                тексты. Вдали от ...
+                            </p>
+                            <div class="about">
+                                <a class="btn_linck" href="newsInternal.html">Подробнее</a>
+                                <p class="date">29/01/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide">
+                        <a href="newsInternal.html" class="top" style="background-image: url(../img/news_1.png)"></a>
+                        <div class="bottom">
+                            <h4>
+                                <a href="newsInternal.html"> Первый раз в Южную Америку: какая страна</a>
+                            </h4>
+                            <p>
+                                Далеко-далеко за словесными
+                                горами в стране гласных
+                                и согласных живут рыбные
+                                тексты. Вдали от ...
+                            </p>
+                            <div class="about">
+                                <a class="btn_linck" href="newsInternal.html">Подробнее</a>
+                                <p class="date">29/01/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide">
+                        <a href="newsInternal.html" class="top" style="background-image: url(../img/news_1.png)"></a>
+                        <div class="bottom">
+                            <h4>
+                                <a href="newsInternal.html"> Первый раз в Южную Америку: какая страна</a>
+                            </h4>
+                            <p>
+                                Далеко-далеко за словесными
+                                горами в стране гласных
+                                и согласных живут рыбные
+                                тексты. Вдали от ...
+                            </p>
+                            <div class="about">
+                                <a class="btn_linck" href="newsInternal.html">Подробнее</a>
+                                <p class="date">29/01/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress_news" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                <span class="slidernews__label3 sr-only"> </span>
+            </div>
+            <div class="num"><span id="cp3">1</span><strong>/</strong>4</div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><strong>Компания</strong></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><strong>Информация</strong></li>
+                        <li><a href="#">Безопасность</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Оферта</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><strong>Часто задаваемые вопросы</strong></li>
+                        <li><a href="#">Оформление и покупка</a></li>
+                        <li><a href="#">Возврат и обмен билета</a></li>
+                        <li><a href="#">Все вопросы и ответы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/logo.png">
+                </a>
+                <p>
+                    © 2007–2019, AVIAKA -
+                    <span>
+                        дешевые авиабилеты
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/fm.revealator.jquery.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jQueryUITouchPunch.min.js"></script>
+    <script src="../js/jquery.scrollify.min.js"></script>
+    <script src="../js/script.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="overlay-order orderPopup animated ">
+        <div class="close"></div>
+        <div class="order__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Авторизация</h3>
+                <form>
+                    <div class="input_box">
+                        <label>E-mail</label>
+                        <input placeholder="Введите вашу почту">
+                    </div>
+                    <div class="input_box">
+                        <label>Пароль</label>
+                        <input placeholder="Введите пароль">
+                    </div>
+                    <button class="btn_form">Вход</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-registration registrationPopup animated ">
+        <div class="close"></div>
+        <div class="registration__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Регистрация</h3>
+                <form>
+                    <div class="input_box">
+                        <label>Имя Фамилия</label>
+                        <input placeholder="Например, Иван Иванов">
+                    </div>
+                    <div class="input_box">
+                        <label>E-mail</label>
+                        <input placeholder="Введите вашу почту">
+                    </div>
+                    <div class="input_box">
+                        <label>Номер телефона</label>
+                        <input class="code" placeholder="370" type="number">
+                        <input class="phone" placeholder="ХХХ-ХХХ-ХХ-ХХ" type="number">
+                    </div>
+                    <div class="input_box">
+                        <label>Пароль</label>
+                        <input placeholder="Введите пароль">
+                    </div>
+                    <div class="input_box">
+                        <label>Повторите пароль</label>
+                        <input placeholder="Повторите пароль">
+                    </div>
+                    <button class="btn_form">зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-valid validPopup animated ">
+        <div class="close"></div>
+        <div class="valid__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Спасибо Вам за регистрацию!</h3>
+                <button class="btn_form">хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-invalid invalidPopup animated ">
+        <div class="close"></div>
+        <div class="invalid__popup ">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Ошибка данных</h3>
+                <button class="btn_form">хорошо</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="bg">
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="../img/logo.png">
+                </a>
+                <div class="mobile">
+                    <div class="user_menu open-order">
+                        <i class="icon-user"></i>
+                    </div>
+                    <div class="menu">
+                        <i class="icon-burger menu_btn"></i>
+                    </div>
+                </div>
+                <div class="desktop">
+                    <ul class="menu">
+                        <li class="active">
+                            <a href="stocks.html">Спецпредложение</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости и публикации</a>
+                        </li>
+                    </ul>
+                    <div class="menu_about">
+                        <div class="select_block">
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                    <option>RU</option>
+                                    <option>ENG</option>
+                                    <option>PL</option>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                    <option>$</option>
+                                    <option>RUB</option>
+                                    <option>EUR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="user_menu open-order">
+                            <i class="icon-user"></i>
+                        </div>
+                        <!--<div class="switch-btn switch-on"></div>-->
+                    </div>
+                </div>
+                <nav class="menu_list">
+                    <div class="select_block">
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>RU</option>
+                                <option>ENG</option>
+                                <option>PL</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>$</option>
+                                <option>RUB</option>
+                                <option>EUR</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <ul>
+                            <li>
+                                <a href="stocks.html">Спецпредложение</a>
+                            </li>
+                            <li>
+                                <a href="news.html">Новости и публикации</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="banner">
+
+            <div class="container">
+                <div class="img_plane">
+                    <img src="../img/unnamed06.png">
+                </div>
+                <div class="banner_title">
+
+                    <h2 class="revealator-zoomout revealator-once">Aviaka</h2>
+                </div>
+                <div class="form_block mobile">
+                    <div class="tabs">
+                        <ul class="tabs__caption">
+                            <li class="active">Авиабилеты</li>
+                            <li>Отели</li>
+                        </ul>
+                        <div class="tabs__content active">
+                            <form>
+                                <div class="radio_box">
+                                    <div class="form_radio radio1">
+                                        <input type="radio" id="radio_1" name="card" checked>
+                                        <label for="radio_1">туда обратно</label>
+                                    </div>
+                                    <div class="form_radio radio2">
+                                        <input type="radio" id="radio_2" name="card">
+                                        <label for="radio_2">в одну сторону</label>
+                                    </div>
+                                </div>
+                                <div class="input_block place">
+                                    <div class="input_box">
+                                        <input type="text" onfocus="this.value=''" value="Москва">
+                                    </div>
+                                    <div class="input_box">
+                                        <input type="text" onfocus="this.value=''" value="Тенерифе">
+                                    </div>
+                                    <div class="swap"><span></span></div>
+                                </div>
+                                <div class="input_block calendar">
+                                    <div class="input_box">
+                                        <div class="img">
+                                            <img src="../img/clouds.png">
+                                        </div>
+                                        <input type="" class="datepicker2" placeholder="Туда">
+                                    </div>
+                                    <div class="input_box about active">
+                                        <div class="img">
+                                            <img src="../img/sun.png">
+                                        </div>
+                                        <input type="" class="datepicker2" placeholder="Обратно">
+                                    </div>
+                                </div>
+                                <div class="pas_btn">
+                                    <div class="passenger">
+                                        <p class="result_calculator">1 Пассажир</p>
+                                    </div>
+                                    <div class="about_calculator">
+                                        <div class="row">
+                                            <div class="name">
+                                                <p><strong>Взрослые</strong></p>
+                                                <p>12 лет и старше</p>
+                                            </div>
+                                            <div class="calculator">
+                                                <button class="decrease" type="button">-</button>
+                                                <input type="text" name="field" value="1" />
+                                                <button class="increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="name">
+                                                <p><strong>Дети</strong></p>
+                                                <p>от 2 до 12 лет</p>
+                                            </div>
+                                            <div class="calculator">
+                                                <button class="decrease" type="button">-</button>
+                                                <input type="text" name="field" value="0" />
+                                                <button class="increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="name">
+                                                <p><strong>Младенцы</strong></p>
+                                                <p>до 2 лет, без места</p>
+                                            </div>
+                                            <div class="calculator">
+                                                <button class="decrease" type="button">-</button>
+                                                <input type="text" name="field" value="0" />
+                                                <button class="increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_slide close">Применить</a>
+                                    </div>
+                                </div>
+                                <div class="radio_box conditions">
+                                    <div class="form_radio">
+                                        <input type="radio" id="radio_4" name="pas" checked>
+                                        <label for="radio_4">Эконом</label>
+                                    </div>
+                                    <div class="form_radio">
+                                        <input type="radio" id="radio_5" name="pas">
+                                        <label for="radio_5">Бизнес</label>
+                                    </div>
+                                </div>
+                                <button class="btn_form">
+                                    <span>Полетели!<i class="icon-plane1"></i></span>
+                                    искать лучшее предложение
+                                </button>
+                            </form>
+                        </div>
+                        <div class="tabs__content">
+                            <form>
+                                <div class="input_block place">
+                                    <div class="input_box">
+                                        <input placeholder="Тенерифе">
+                                    </div>
+                                </div>
+                                <div class="pas_btn">
+                                    <div class="passenger">
+                                        <p class="result_calculator">1 Пассажир</p>
+                                    </div>
+                                    <div class="about_calculator">
+                                        <div class="row">
+                                            <div class="name">
+                                                <p><strong>Взрослые</strong></p>
+                                                <p>12 лет и старше</p>
+                                            </div>
+                                            <div class="calculator">
+                                                <button class="decrease" type="button">-</button>
+                                                <input type="text" name="field" value="1" />
+                                                <button class="increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="name">
+                                                <p><strong>Дети</strong></p>
+                                                <p>от 2 до 12 лет</p>
+                                            </div>
+                                            <div class="calculator">
+                                                <button class="decrease" type="button">-</button>
+                                                <input type="text" name="field" value="0" />
+                                                <button class="increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="name">
+                                                <p><strong>Младенцы</strong></p>
+                                                <p>до 2 лет, без места</p>
+                                            </div>
+                                            <div class="calculator">
+                                                <button class="decrease" type="button">-</button>
+                                                <input type="text" name="field" value="0" />
+                                                <button class="increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_slide close">Применить</a>
+                                    </div>
+                                </div>
+                                <div class="input_block calendar">
+                                    <div class="input_box">
+                                        <div class="img">
+                                            <img src="../img/clouds.png">
+                                        </div>
+                                        <input type="" class="datepicker2" placeholder="Дата заезда">
+                                    </div>
+                                    <div class="input_box">
+                                        <div class="img">
+                                            <img src="../img/sun.png">
+                                        </div>
+                                        <input type="" class="datepicker2" placeholder="Дата отъезда">
+                                    </div>
+                                </div>
+                                <button class="btn_form">
+                                    <span>Показать<i class="icon-hotel"></i></span>
+                                    лучшее предложение
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_block desktop">
+                    <div class="tabs">
+                        <ul class="tabs__caption">
+                            <li class="active">Авиабилеты</li>
+                            <li>Отели</li>
+                        </ul>
+                        <div class="tabs__content active">
+                            <div class="left_block">
+                                <h4>Куда летим?</h4>
+                                <form>
+                                    <div class="radio_box">
+                                        <div class="form_radio radio1">
+                                            <input type="radio" id="radio_11" name="card" checked>
+                                            <label for="radio_11">туда обратно</label>
+                                        </div>
+                                        <div class="form_radio radio2">
+                                            <input type="radio" id="radio_22" name="card">
+                                            <label for="radio_22">в одну сторону</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_block place">
+                                        <div class="input_box">
+                                            <input type="text" onfocus="this.value=''" value="Москва">
+                                        </div>
+                                        <div class="input_box">
+                                            <input type="text" onfocus="this.value=''" value="Тенерифе">
+                                        </div>
+                                        <div class="swap"><span></span></div>
+                                    </div>
+                                    <div class="input_block calendar">
+                                        <div class="input_box">
+                                            <div class="img">
+                                                <img src="../img/clouds.png">
+                                            </div>
+                                            <input type="" class="datepicker3" placeholder="Туда">
+                                        </div>
+                                        <div class="input_box about active">
+                                            <div class="img">
+                                                <img src="../img/sun.png">
+                                            </div>
+                                            <input type="" class="datepicker3" placeholder="Обратно">
+                                        </div>
+                                    </div>
+                                    <div class="result">
+                                        <p>Расстояние и время в пути:</p>
+                                        <div class="form_result">
+                                            <div class="start box_result">
+                                                <i class="icon-start"></i>
+                                                <span><strong>1 100 км</strong></span>
+                                            </div>
+                                            <div class="plane box_result">
+                                                <i class="icon-vector"></i>
+                                                <span>2 ч. 15 мин.</span>
+                                            </div>
+                                            <div class="care box_result">
+                                                <i class="icon-001-car"></i>
+                                                <span>29 ч.</span>
+                                            </div>
+                                            <div class="bus box_result">
+                                                <i class="icon-002-bus"></i>
+                                                <span>29 ч.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="right_block">
+                                <form>
+                                    <div class="pas_btn">
+                                        <div class="passenger">
+                                            <p class="result_calculator">1 Пассажир</p>
+                                        </div>
+                                        <div class="about_calculator">
+                                            <div class="row">
+                                                <div class="name">
+                                                    <p><strong>Взрослые</strong></p>
+                                                    <p>12 лет и старше</p>
+                                                </div>
+                                                <div class="calculator">
+                                                    <button class="decrease" type="button">-</button>
+                                                    <input type="text" name="field" value="1" />
+                                                    <button class="increase" type="button">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="name">
+                                                    <p><strong>Дети</strong></p>
+                                                    <p>от 2 до 12 лет</p>
+                                                </div>
+                                                <div class="calculator">
+                                                    <button class="decrease" type="button">-</button>
+                                                    <input type="text" name="field" value="0" />
+                                                    <button class="increase" type="button">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="name">
+                                                    <p><strong>Младенцы</strong></p>
+                                                    <p>до 2 лет, без места</p>
+                                                </div>
+                                                <div class="calculator">
+                                                    <button class="decrease" type="button">-</button>
+                                                    <input type="text" name="field" value="0" />
+                                                    <button class="increase" type="button">+</button>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn_slide close">Применить</a>
+                                        </div>
+                                    </div>
+                                    <div class="radio_box conditions">
+                                        <div class="form_radio">
+                                            <input type="radio" id="radio_4" name="pas" checked>
+                                            <label for="radio_4">Эконом</label>
+                                        </div>
+                                        <div class="form_radio">
+                                            <input type="radio" id="radio_5" name="pas">
+                                            <label for="radio_5">Бизнес</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn_form">
+                                        <span>Полетели!<i class="icon-plane1"></i></span>
+                                        искать лучшее предложение
+                                    </button>
+                                    <div class="check_form">
+                                        <input type="checkbox" checked>
+                                        <label>показать выгодные спец. предложения по отелям в новом окне</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="left_block">
+                                <h4>Где остановимся?</h4>
+                                <form>
+                                    <div class="top">
+                                        <div class="input_block place">
+                                            <div class="input_box">
+                                                <input type="text" placeholder="Москва">
+                                            </div>
+                                        </div>
+                                        <div class="select passenger">
+                                            <select id="test" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                                <option>2 Гостя</option>
+                                                <option>2 Гостя</option>
+                                                <option>2 Гостя</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input_block calendar">
+                                        <div class="input_box">
+                                            <div class="img">
+                                                <img src="../img/clouds.png">
+                                            </div>
+                                            <input type="" class="datepicker3" placeholder="Дата заезда">
+                                        </div>
+                                        <div class="input_box">
+                                            <div class="img">
+                                                <img src="../img/sun.png">
+                                            </div>
+                                            <input type="" class="datepicker3" placeholder="Дата отъезда">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="right_block tab2">
+                                <form>
+                                    <div class="input_block place">
+                                        <div class="input_box">
+                                            <input type="text" placeholder="На сколько дней?">
+                                        </div>
+                                    </div>
+                                    <div class="check_form">
+                                        <input type="checkbox" checked>
+                                        <label>показать выгодные спец. предложения по отелям в новом окне</label>
+                                    </div>
+                                    <button class="btn_form">
+                                        <span>Показать<i class="icon-hotel"></i></span>
+                                        лучшее предложение
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="special_offer">
+        <div class="container">
+            <div class="title">
+                <h2 class="revealator-slideleft revealator-once">Специальные предложения из Риги</h2>
+                <p class="revealator-slideleft revealator-delay4 revealator-once">Подобрать выгодные билеты</p>
+                <span class="revealator-slideright revealator-delay6 revealator-duration12 revealator-once">Special offers</span>
+            </div>
+            <div class="special_slider">
+                <div>
+                    <a href="stocks.html" class="slide">
+                        <div class="top">
+                            <div class="img" style="background-image: url(../img/photo_1.png)"></div>
+                        </div>
+                        <div class="bottom">
+                            <h4>
+                                <strong>
+                                    Париж,
+                                </strong>
+                                Франция
+                            </h4>
+                            <div class="content">
+                                <div class="block">
+                                    <h5>В одну сторону</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="line">Sale / Sale / Sale / Sale/ Sale / Sale</span>
+                                <div class="block">
+                                    <h5>В обе стороны</h5>
+                                    <ul>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="linc">Другие даты </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stocks.html" class="slide">
+                        <div class="top">
+                            <div class="img" style="background-image: url(../img/photo_2.png)"></div>
+                        </div>
+                        <div class="bottom">
+                            <h4>
+                                <strong>
+                                    Штутгарт,
+                                </strong>
+                                Германия
+                            </h4>
+                            <div class="content">
+                                <div class="block">
+                                    <h5>В одну сторону</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="line">Sale / Sale / Sale / Sale/ Sale / Sale</span>
+                                <div class="block">
+                                    <h5>В обе стороны</h5>
+                                    <ul>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="linc">Другие даты </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stocks.html" class="slide">
+                        <div class="top">
+                            <div class="img" style="background-image: url(../img/photo_3.png)"></div>
+                        </div>
+                        <div class="bottom">
+                            <h4>
+                                <strong>
+                                    лондон,
+                                </strong>
+                                Великобритания
+                            </h4>
+                            <div class="content">
+                                <div class="block">
+                                    <h5>В одну сторону</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="line">Sale / Sale / Sale / Sale/ Sale / Sale</span>
+                                <div class="block">
+                                    <h5>В обе стороны</h5>
+                                    <ul>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="linc">Другие даты </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stocks.html" class="slide">
+                        <div class="top">
+                            <div class="img" style="background-image: url(../img/photo_4.png)"></div>
+                        </div>
+                        <div class="bottom">
+                            <h4>
+                                <strong>
+                                    Венеция,
+                                </strong>
+                                Италия
+                            </h4>
+                            <div class="content">
+                                <div class="block">
+                                    <h5>В одну сторону</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="line">Sale / Sale / Sale / Sale/ Sale / Sale</span>
+                                <div class="block">
+                                    <h5>В обе стороны</h5>
+                                    <ul>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="linc">Другие даты </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stocks.html" class="slide">
+                        <div class="top">
+                            <div class="img" style="background-image: url(../img/photo_1.png)"></div>
+                        </div>
+                        <div class="bottom">
+                            <h4>
+                                <strong>
+                                    Париж,
+                                </strong>
+                                Франция
+                            </h4>
+                            <div class="content">
+                                <div class="block">
+                                    <h5>В одну сторону</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="line">Sale / Sale / Sale / Sale/ Sale / Sale</span>
+                                <div class="block">
+                                    <h5>В обе стороны</h5>
+                                    <ul>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="linc">Другие даты </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stocks.html" class="slide">
+                        <div class="top">
+                            <div class="img" style="background-image: url(../img/photo_2.png)"></div>
+                        </div>
+                        <div class="bottom">
+                            <h4>
+                                <strong>
+                                    Штутгарт,
+                                </strong>
+                                Германия
+                            </h4>
+                            <div class="content">
+                                <div class="block">
+                                    <h5>В одну сторону</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-vector"></i>
+                                            <p class="date_plane">10.02.2020</p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="line">Sale / Sale / Sale / Sale/ Sale / Sale</span>
+                                <div class="block">
+                                    <h5>В обе стороны</h5>
+                                    <ul>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                        <li>
+                                            <span>2 дня</span>
+                                            <p class="date_plane"><i class="icon-vector"></i>10.02.2020 - <i class="icon-vector"></i>10.02.2020 </p><span>10 €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="linc">Другие даты </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="progress_special" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                <span class="sliderspecial__label2 sr-only"> </span>
+            </div>
+            <div class="num"><span id="cp1">1</span><strong>/</strong>6</div>
+            <a href="#" class="btn_slide">Смотреть больше</a>
+        </div>
+    </section>
+
+    <section class="benefit">
+        <div class="container">
+            <div class="title">
+                <h2 class="revealator-slideleft revealator-once">почему авиака это выгодно?</h2>
+                <p class="revealator-slideleft revealator-delay4 revealator-once">Преимущества работы с нашим сервисом</p>
+                <span class="revealator-slideright revealator-delay6 revealator-duration12 revealator-once">advantages</span>
+            </div>
+            <div class="box_container">
+                <div class="box box_1">
+                    <p>
+                        Круглосуточная поддержка
+                        <strong>24/7</strong>
+                    </p>
+                </div>
+                <div class="box box_2">
+                    <p>
+                        Компенсация
+                        <strong>600 EUR</strong>
+                        за задержку рейса!
+                    </p>
+                </div>
+                <div class="box box_3">
+                    <p>
+                        Без скрытых платежей.
+                        <strong>0 EUR </strong>
+                        наша комиссия!
+                    </p>
+                </div>
+                <div class="box box_4">
+                    <p>
+                        Счастливые билеты,
+                        <strong>Бронируй </strong>
+                        больше - получай подарки
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="title">
+                <h2 class="revealator-slideleft revealator-once">популярные направления</h2>
+                <p class="revealator-slideleft revealator-delay4 revealator-once">Поиск авиабилетов, отелей по самым популярным направлениям</p>
+                <span class="revealator-slideright revealator-delay6 revealator-duration12 revealator-once">destinations</span>
+            </div>
+            <div class="slider_popular">
+                <div>
+                    <div class="slide slide_1">
+                        <div class="box">
+                            <div class="top">
+                                <a href="stocks.html"><img src="../img/popular_1.png"></a>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>бангкок,</strong> Тайланд
+                                </p>
+                                <a href="stocks.html" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <a href="stocks.html"><img src="../img/popular_2.png"></a>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>денпасар,</strong> Индонезия
+                                </p>
+                                <a href="stocks.html" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <a href="stocks.html"> <img src="../img/popular_3.png"></a>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>Санкт-Петербург,</strong> Россия
+                                </p>
+                                <a href="stocks.html" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide slide_2">
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_1.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>бангкок,</strong> Тайланд
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_2.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>денпасар,</strong> Индонезия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_3.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>Санкт-Петербург,</strong> Россия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide slide_3">
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_1.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>бангкок,</strong> Тайланд
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_2.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>денпасар,</strong> Индонезия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_3.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>Санкт-Петербург,</strong> Россия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide slide_4">
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_1.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>бангкок,</strong> Тайланд
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_2.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>денпасар,</strong> Индонезия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_3.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>Санкт-Петербург,</strong> Россия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide slide_5">
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_1.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>бангкок,</strong> Тайланд
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_2.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>денпасар,</strong> Индонезия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_3.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>Санкт-Петербург,</strong> Россия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide slide_6">
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_1.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>бангкок,</strong> Тайланд
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_2.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>денпасар,</strong> Индонезия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <img src="../img/popular_3.png">
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <strong>Санкт-Петербург,</strong> Россия
+                                </p>
+                                <a href="#" class="link">Посмотреть цены<i class="icon-arrow-point-to-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                <span class="slider__label sr-only"> </span>
+            </div>
+            <div class="num"><span id="cp">1</span><strong>/</strong>6</div>
+        </div>
+    </section>
+
+    <section class="attachment">
+        <div class="container">
+            <div class="title">
+                <h2 class="revealator-slideleft revealator-once">Еще удобнее и выгоднее в приложении AVIAKA</h2>
+                <p class="revealator-slideleft revealator-delay4 revealator-once">Скачивай - Бронируй - Получай бонусы!</p>
+                <span class="revealator-slideright revealator-delay6 revealator-duration12 revealator-once">application</span>
+            </div>
+            <div class="left_block">
+                <div class="text">
+                    <h4><i class="icon-check"></i>Оплачивайте безопасно</h4>
+                    <p>
+                        Данные вашей карты VISA, MasterCard, Maestro
+                        и МИР защищены по секретному
+                        SSL-протоколу
+                    </p>
+                </div>
+                <div class="text">
+                    <h4><i class="icon-check"></i>Просматривайте заказы офлайн</h4>
+                    <p>
+                        Вся информация по вашему перелёту доступна,
+                        даже если нет интернета
+                    </p>
+                </div>
+                <div class="text">
+                    <h4><i class="icon-check"></i>Будьте в курсе</h4>
+                    <p>
+                        Уведомляем, что пора собираться в аэропорт
+                        и о статусе заказа
+                    </p>
+                </div>
+                <div class="button_block">
+                    <a href="#" class="google"></a>
+                    <a href="#" class="app"></a>
+                </div>
+            </div>
+            <div class="right_block">
+                <div class="img"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><strong>Компания</strong></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><strong>Информация</strong></li>
+                        <li><a href="#">Безопасность</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Оферта</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><strong>Часто задаваемые вопросы</strong></li>
+                        <li><a href="#">Оформление и покупка</a></li>
+                        <li><a href="#">Возврат и обмен билета</a></li>
+                        <li><a href="#">Все вопросы и ответы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/logo.png">
+                </a>
+                <p>
+                    © 2007–2019, AVIAKA -
+                    <span>
+                        дешевые авиабилеты
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/fm.revealator.jquery.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jQueryUITouchPunch.min.js"></script>
+    <script src="../js/jquery.scrollify.min.js"></script>
+    <script src="../js/script.min.js"></script>
+
+</body>
+
+</html>
